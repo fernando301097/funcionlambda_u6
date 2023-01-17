@@ -16,6 +16,7 @@ def lambda_handler(event, context):
         "installments": int(bodyGet["installments"]),
         "payment_method_id": bodyGet["payment_method_id"],
         "transaction_amount": int(bodyGet["transaction_amount"]),
+        
         "payer": {
             "email": bodyGet["payer"]["email"],
             "identification": {
